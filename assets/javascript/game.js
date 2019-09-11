@@ -19,12 +19,12 @@ $("#numberLosses").text(losses);
 
 function reset(){
     random=Math.floor(Math.random()*101+19);
-    console.log(random)
+    console.log("reset" + random)
     $("#randomNumber").text(random);
-        num1= math.floor(Math.random()*11+1);
-        num2= math.floor(Math.random()*11+1);
-        num3= math.floor(Math.random()*11+1);
-        num4= math.floor(Math.random()*11+1);
+        num1= Math.floor(Math.random()*11+1);
+        num2= Math.floor(Math.random()*11+1);
+        num3= Math.floor(Math.random()*11+1);
+        num4= Math.floor(Math.random()*11+1);
         userTotal= 0;
         $("#finalTotal").text(userTotal);
 }
@@ -32,13 +32,13 @@ function reset(){
 function yes(){
     alert("You Won!");
     wins++;
-    $("#numberWins").test(wins);
+    $("#numberWins").text(wins);
     reset();
 }
 function loser(){
     alert ("#You lose!");
     losses++;
-    $("#numberLosses").test(losses);
+    $("#numberLosses").text(losses);
     reset();
 }
 $("#one").on("click", function(){
